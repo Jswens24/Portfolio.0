@@ -11,9 +11,9 @@ const LandingPage = () => {
             </div>
             <div className='scroll-landing-div'>
                 <p className='scroll-landing-p'>scroll</p>
-                <a href=""><div className='arrow down'></div></a>
-                <a href=""><div className='arrow down'></div></a>
-                <a href=""><div className='arrow down'></div></a>
+                <a href="#about-page"><div className='arrow down'></div></a>
+                <a href="#about-page"><div className='arrow down'></div></a>
+                <a href="#about-page"><div className='arrow down'></div></a>
             </div>
         </div>
     );

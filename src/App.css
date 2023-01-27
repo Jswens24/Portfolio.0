@@ -1,13 +1,3 @@
-.App {
-  background-image: url('./Media/background-img.jpeg');
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-
-
 /* .App {
   text-align: center;
 }
