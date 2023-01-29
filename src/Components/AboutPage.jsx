@@ -11,7 +11,7 @@ const AboutPage = () => {
                     <img className='portfolio-pic' src='https://drive.google.com/uc?export=view&id=1Vqvp_DNooIELcVbju_wRweselPFDuOwT' alt='picture of me!' />
                 </div>
                 <div className="bio-education-div">
-                    <p className='about-me-bio'>Hi, I’m Jessica!  I’m from Salt Lake City, and I’m a Web Developer.  I am also a serial learner, whether it's learning a new skill, hobby, or sport, I am always learning something new.  After working in finance and then getting a degree in Business Administration.  I decided to take a Coding Basics class and I immediately fell in love with programming.  I love the challenge and creativity that it offers.  I attended Devmountain's Web Developement program where I learned the foundations of the web as well as specialized in React. </p>
+                    <p className='about-me-bio'>Hi, I’m Jessica!  I’m from Salt Lake City, and I’m a Web Developer.  I am also a serial learner, whether it's learning a new skill, hobby, or sport, I am always learning something new.  After working in finance and then getting a degree in Business Administration.  I decided to take a Coding Basics class and I immediately fell in love with programming.  I love the challenge and creativity that it offers.  I attended Devmountain's Web Development program where I learned the foundations of the web as well as specialized in React. </p>
                     <div className="education-div">
                         <h3>EDUCATION</h3>
                         <h4 className='school'>Strayer University March 2022</h4>
@@ -23,9 +23,9 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="about-arrow-div">
-                <a href=""><div className='arrow down'></div></a>
-                <a href=""><div className='arrow down'></div></a>
-                <a href=""><div className='arrow down'></div></a>
+                <a href="#project-page"><div className='arrow down'></div></a>
+                <a href="#project-page"><div className='arrow down'></div></a>
+                <a href="#project-page"><div className='arrow down'></div></a>
             </div>
         </div>
     )
