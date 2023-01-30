@@ -1,6 +1,7 @@
 
 import './App.css';
 import AboutPage from './Components/AboutPage';
+import ContactPage from './Components/ContactPage';
 import LandingPage from './Components/LandingPage';
 import ProjectPage from './Components/ProjectPage';
 
@@ -10,6 +11,7 @@ function App() {
       <LandingPage />
       <AboutPage />
       <ProjectPage />
+      <ContactPage />
     </div>
   );
 }

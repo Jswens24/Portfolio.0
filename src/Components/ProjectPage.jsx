@@ -60,9 +60,9 @@ const ProjectPage = () => {
                 </form>
             </div>
             <div className="about-arrow-div">
-                <a href=""><div className='arrow down'></div></a>
-                <a href=""><div className='arrow down'></div></a>
-                <a href=""><div className='arrow down'></div></a>
+                <a href="#contact-page"><div className='arrow down'></div></a>
+                <a href="#contact-page"><div className='arrow down'></div></a>
+                <a href="#contact-page"><div className='arrow down'></div></a>
             </div>
         </div >
     )
