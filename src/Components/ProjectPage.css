@@ -3,7 +3,7 @@
 }
 
 .gold-box-div {
-    background-color: rgb(255, 215, 0, .25);
+    background-color: rgb(255, 215, 0, .35);
     color: white;
     display: flex;
     flex-direction: column;

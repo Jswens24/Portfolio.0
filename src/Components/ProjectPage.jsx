@@ -39,7 +39,7 @@ const ProjectPage = () => {
                 </div>
                 <div>
                     {!isSelected &&
-                        <h2 className='projects-title'>Please select a project</h2>
+                        <h2 className='projects-title'>Please select a project from above</h2>
                     }
                 </div>
                 <div className="video-contain">
