@@ -30,6 +30,7 @@
     text-align: center;
     /* padding-top: 5%; */
     font-family: 'Space Mono', monospace;
+    padding: 5%;
 }
 
 .school {
@@ -44,4 +45,10 @@
     margin-top: 10%;
     display: flex;
     justify-content: space-around;
+}
+
+@media (min-width: 650px) {
+    .portfolio-pic {
+        height: 300px;
+    }
 }
