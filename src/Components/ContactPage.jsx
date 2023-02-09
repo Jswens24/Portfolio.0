@@ -37,9 +37,9 @@ const ContactPage = () => {
                 </div>
             </div>
             <div className="about-arrow-div">
-                <a href="#project-page"><div className='arrow up'></div></a>
-                <a href="#project-page"><div className='arrow up'></div></a>
-                <a href="#project-page"><div className='arrow up'></div></a>
+                <a href="#landing-page"><div className='arrow up'></div></a>
+                <a href="#landing-page"><div className='arrow up'></div></a>
+                <a href="#landing-page"><div className='arrow up'></div></a>
             </div>
         </div>
     )

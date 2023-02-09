@@ -4,7 +4,7 @@ import './LandingPage.css';
 const LandingPage = () => {
 
     return (
-        <div className='landing-page-main-div'>
+        <div id='landing-page' className='landing-page-main-div'>
             <div className='name-circle'>
                 <h1>JESSICA SWENSON</h1>
                 <h3 className='web-dev-h3'>web developer</h3>
