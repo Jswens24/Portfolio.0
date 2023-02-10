@@ -25,7 +25,7 @@ const ContactPage = () => {
                 <div className='gold-box-div contact-form-div'>
                     <form action="https://formsubmit.co/jessica.swenson.dev@gmail.com" method="POST" className="contact-form">
                         <input type="hidden" name="_subject" value="New contact submission!" />
-                        <input type="hidden" name="_next" value="http://localhost:3000/#contact-page"></input>
+                        <input type="hidden" name="_next" value="https://jessica-swenson.com/#contact-page"></input>
                         <input type="hidden" name="_autoresponse" value="Thank you for reaching out, I will be contacting you soon!" />
                         <label>NAME: <input type='text' name='name' required /> </label>
                         <label>EMAIL: <input type='text' name='email' required /> </label>
