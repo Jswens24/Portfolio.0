@@ -84,11 +84,15 @@ label {
 
 input {
     background-color: #D9D9D9;
+    border: none;
+    opacity: 55%;
     font-size: 25px;
 }
 
 textarea {
     background-color: #D9D9D9;
+    border: none;
+    opacity: 55%;
     font-size: 32px;
     margin-bottom: 5%;
 }

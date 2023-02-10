@@ -2,6 +2,11 @@
     margin-top: 40%;
 }
 
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .gold-box-div {
     background-color: rgb(255, 215, 0, .35);
     color: white;
@@ -38,6 +43,7 @@
 .desc-and-tech {
     text-align: center;
     font-family: 'Space Mono', monospace;
+    padding: 5%;
 }
 
 .tech {
