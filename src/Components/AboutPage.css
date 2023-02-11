@@ -1,54 +1,160 @@
-.start-about-page {
-    margin-top: 40%;
-}
+@media screen and (min-width: 1050px) {
 
-.portfolio-pic {
-    height: 120px;
-}
+    .start-about-page {
+        padding-top: 10rem;
+        background-color: #F8D372;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
 
-.gold-box-div {
-    background-color: rgb(255, 215, 0, .25);
-    color: white;
-}
-
-.about-me-h2 {
-    font-family: 'Space Mono', monospace;
-}
-
-.about-me-pic-div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2%;
-    width: 100%;
-}
-
-.bio-education-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /* padding-top: 5%; */
-    font-family: 'Space Mono', monospace;
-    padding: 5%;
-}
-
-.school {
-    text-decoration: underline;
-}
-
-.type-of-degree {
-    margin-top: -5%;
-}
-
-.about-arrow-div {
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-around;
-}
-
-@media (min-width: 650px) {
     .portfolio-pic {
-        height: 300px;
+        width: 45%;
+        border-radius: 1rem;
+    }
+
+    .about-me-h2 {
+        font-family: 'Space Mono', monospace;
+        color: black;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .about-me-bio {
+        color: black;
+        font-size: 1.2rem;
+        font-family: 'Space Mono', monospace;
+        padding: 2rem;
+
+    }
+
+    .about-me-pic-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        width: 100%;
+    }
+
+    .education-div {
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        padding-bottom: 10rem;
+    }
+
+    .education-div h3 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .school-logo {
+        width: 35%;
+    }
+
+    .schools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+
+    .school {
+        text-decoration: underline;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .type-of-degree {
+        font-size: 1.1rem;
+        margin-top: .50rem;
+    }
+
+}
+
+
+/* PHONE SIZE VVVVVVVV */
+
+@media screen and (max-width: 1050px) {
+    .start-about-page {
+        padding-top: 25rem;
+        background-color: #F8D372;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+
+    .portfolio-pic {
+        width: 45%;
+        border-radius: 1rem;
+    }
+
+    .about-me-h2 {
+        font-family: 'Space Mono', monospace;
+        color: black;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .about-me-bio {
+        color: black;
+        font-size: 1.2rem;
+        font-family: 'Space Mono', monospace;
+        padding: 2rem;
+
+    }
+
+    .about-me-pic-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        width: 100%;
+    }
+
+    .education-div {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        width: 100%;
+        font-family: 'Space Mono', monospace;
+        padding-bottom: 10rem;
+    }
+
+    .education-div h3 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .school-logo {
+        width: 35%;
+    }
+
+    .schools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+
+    .school {
+        text-decoration: underline;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .type-of-degree {
+        font-size: 1.1rem;
+        margin-top: .50rem;
     }
 }

@@ -1,0 +1,136 @@
+@media screen and (min-width: 1050px) {
+
+    .nav-bar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Space Mono', monospace;
+        margin: 2rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        transition: background 1s ease
+    }
+
+
+
+    .name-logo {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: center;
+    }
+
+    .name-logo h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+    }
+
+    .name-logo h6 {
+        font-size: 1rem;
+        margin-top: -1.5rem;
+        text-align: center;
+        font-weight: 200;
+        color: black;
+    }
+
+    .nav-links-container {
+        width: 78%;
+        justify-content: center;
+    }
+
+    .nav-links-ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style-type: none;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+}
+
+/* PHONE SIZE VVVVVVVV */
+
+@media screen and (max-width: 1050px) {
+
+    .nav-bar-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Space Mono', monospace;
+        margin: 2rem;
+        position: fixed;
+        /* height: 10rem; */
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .name-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-logo h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .name-logo h6 {
+        font-size: 1rem;
+        margin-top: -1.5rem;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .nav-links-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links-ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    li {
+        list-style-type: none;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
