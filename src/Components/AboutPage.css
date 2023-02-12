@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 1050px) {
     .start-about-page {
-        padding-top: 25rem;
+        padding-top: 15rem;
         background-color: #F8D372;
         animation-name: fade-in;
         animation-duration: 1s;
