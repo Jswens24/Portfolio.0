@@ -1,22 +1,12 @@
-import React from 'react';
-import './LandingPage.css';
+import './LandingPage.css'
+import React from 'react'
 
 const LandingPage = () => {
-
     return (
-        <div id='landing-page' className='landing-page-main-div'>
-            <div className='name-circle'>
-                <h1>JESSICA SWENSON</h1>
-                <h3 className='web-dev-h3'>web developer</h3>
-            </div>
-            <div className='scroll-landing-div'>
-                <p className='scroll-landing-p'>scroll</p>
-                <a href="#about-page"><div className='arrow down'></div></a>
-                <a href="#about-page"><div className='arrow down'></div></a>
-                <a href="#about-page"><div className='arrow down'></div></a>
-            </div>
+        <div className='home-computer-div'>
+            <img className='home-computer' alt='computer' src='https://drive.google.com/uc?export=view&id=1jfu0OHtWfi5s714et1YFlv_orY-D-yXr' />
         </div>
-    );
+    )
 }
 
-export default LandingPage;
+export default LandingPage
