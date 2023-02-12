@@ -8,7 +8,6 @@ const ProjectPage = () => {
     const [projectDesc, setProjectDesc] = useState(projectData.projectData[0].projectDescription);
     const [techUsed, setTechUsed] = useState(projectData.projectData[0].technologiesUsed);
     const [gitHubLink, setGitHubLink] = useState(projectData.projectData[0].gitHubLink);
-    const [isSelected, setIsSelected] = useState(false);
 
     const spudBudHandler = () => {
         setProjectTitle(projectData.projectData[0].projectTitle);
@@ -16,7 +15,6 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[0].projectDescription);
         setTechUsed(projectData.projectData[0].technologiesUsed);
         setGitHubLink(projectData.projectData[0].gitHubLink);
-        setIsSelected(true);
         // console.log(projectData);
     }
 
@@ -26,7 +24,6 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[1].projectDescription);
         setTechUsed(projectData.projectData[1].technologiesUsed);
         setGitHubLink(projectData.projectData[1].gitHubLink);
-        setIsSelected(true);
     }
 
     return (
