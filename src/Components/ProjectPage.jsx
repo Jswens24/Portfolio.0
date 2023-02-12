@@ -56,7 +56,9 @@ const ProjectPage = () => {
                     <p className='tech'>{techUsed}</p>
                 </div>
                 <form>
-                    <button className='github-btn' formAction={gitHubLink}>GITHUB</button>
+                    <button className='github-btn' formAction={gitHubLink}>
+                        <i class="devicon-github-original colored"></i>
+                    </button>
                 </form>
             </div>
         </div >
