@@ -41,6 +41,9 @@
         padding-top: 2rem;
     }
 
+    button {
+        color: black;
+    }
 
 
     .selected-project-css {
@@ -140,6 +143,11 @@
         padding-top: 2%;
         width: 100%;
     }
+
+    button {
+        color: black;
+    }
+
 
     .list {
         display: flex;
