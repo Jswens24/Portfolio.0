@@ -52,6 +52,7 @@
         border: none;
         font-family: 'Space Mono', monospace;
         padding-bottom: 5%;
+        color: black;
     }
 
     .project-name {
@@ -174,6 +175,7 @@
         border: none;
         font-family: 'Space Mono', monospace;
         padding-bottom: 5%;
+        color: black;
     }
 
     .project-name {
