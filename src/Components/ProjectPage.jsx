@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProjectPage.css';
 import projectData from '../Data/ProjectData';
 
 const ProjectPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const [projectTitle, setProjectTitle] = useState(projectData.projectData[0].projectTitle);
     const [demoLink, setDemoLink] = useState(projectData.projectData[0].demoLink);
     const [projectDesc, setProjectDesc] = useState(projectData.projectData[0].projectDescription);

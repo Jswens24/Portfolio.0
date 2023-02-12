@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutPage.css'
 
 const AboutPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div id='about-page' className='start-about-page'>

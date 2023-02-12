@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ContactPage.css';
 
 const ContactPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const copyEmailHandler = () => {
         // navigator.clipboard.writeText('jessica.swenson.dev@gmail.com')
