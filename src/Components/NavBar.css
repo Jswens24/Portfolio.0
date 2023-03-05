@@ -15,7 +15,26 @@
         transition: background 1s ease
     }
 
+    .full-screen-hide {
+        display: none;
+    }
 
+    .exit-nav-hide {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .nav-links-ul-closed {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .exit-nav-show {
+        display: none;
+    }
 
     .name-logo {
         display: flex;
