@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar = () => {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const navBarClick = () => {
+        setIsClicked(!isClicked)
+    }
 
 
     return (
@@ -14,17 +19,22 @@ const NavBar = () => {
                 </div>
             </Link>
             <div className='nav-links-container'>
-                <ul className='nav-links-ul'>
-                    <Link className='nav-link' to='/about'>
+                <ul className={isClicked ? 'nav-links-ul' : 'nav-links-ul-closed'} >
+                    <Link onClick={navBarClick} className='nav-link' to='/about'>
                         <li>ABOUT</li>
                     </Link>
-                    <Link className='nav-link' to='/projects'>
+                    <Link onClick={navBarClick} className='nav-link' to='/projects'>
                         <li>PROJECTS</li>
                     </Link>
-                    <Link className='nav-link' to='/contact'>
+                    <Link onClick={navBarClick} className='nav-link' to='/contact'>
                         <li>CONTACT</li>
                     </Link>
                 </ul>
+                <a style={{ fontSize: '2rem' }} onClick={navBarClick} className={!isClicked ? 'icon' : 'nav-links-ul-closed'}>
+                    <i className='fa fa-bars'></i>
+                </a>
+                <h1 onClick={navBarClick} className={isClicked ? 'exit-nav-show' : 'exit-nav-hide'}>X</h1>
+
             </div>
         </nav>
     )
