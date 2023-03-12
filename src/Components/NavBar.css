@@ -101,9 +101,8 @@
         font-family: 'Space Mono', monospace;
         margin: 0;
         position: fixed;
-        /* height: 10rem; */
+        height: 8rem;
         top: 0;
-        width: 100%;
         z-index: 10;
         animation-name: fade-in;
         animation-duration: 1s;
