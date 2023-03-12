@@ -33,7 +33,7 @@ const NavBar = () => {
                 <div style={{ fontSize: '2rem' }} onClick={navBarClick} className={!isClicked ? 'icon' : 'nav-links-ul-closed'}>
                     <i className='fa fa-bars full-screen-hide'></i>
                 </div>
-                <h1 onClick={navBarClick} className={isClicked ? 'exit-nav-show' : 'exit-nav-hide'}>X</h1>
+                {/* <h1 onClick={navBarClick} className={isClicked ? 'exit-nav-show' : 'exit-nav-hide'}>X</h1> */}
 
             </div>
         </nav>
