@@ -15,7 +15,16 @@ const projectData = [
         gitHubLink: 'https://github.com/Jswens24/campanion',
         hosted: false,
         projectDescription: "Campanion is a camping journal I created to keep information about different off-grid campsites I like to visit.  Users can log in to see their campsites as well as create new campsites by entering basic information like a title, picture, and coordinates.  When searching or filtering through your campsites, you can click on them and see a more detailed view.  I connected to weatherbit.io's API to show you the current weather for that location.  I also connected to google maps API to show your location on a map as well as provide directions.",
-        technologiesUsed: 'JavaScript | HTML | CSS | React | Node.js | Express | Axios | Sequelize  | Bit.io |'
+        technologiesUsed: 'JavaScript | HTML | CSS | React | Node.js | Express | Axios | Sequelize  | Bit.io | Google Maps Api | Weatherbit.io'
+    },
+    {
+        projectId: 3,
+        projectTitle: 'Jessica News',
+        demoLink: 'https://www.youtube.com/embed/mNCoxEBdTjg',
+        gitHubLink: 'https://github.com/Jswens24/news-app',
+        hosted: false,
+        projectDescription: 'Jessica News is a styling project that I built using tailwindcss.  The design is based on a popular news source and uses React for the front end.',
+        technologiesUsed: 'JavaScript | HTML | CSS | React | Axios | tailwindcss | newsapi.org'
     }
 ]
 

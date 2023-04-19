@@ -31,6 +31,14 @@ const ProjectPage = () => {
         setGitHubLink(projectData.projectData[1].gitHubLink);
     }
 
+    const jessicaNewsHandler = () => {
+        setProjectTitle(projectData.projectData[2].projectTitle);
+        setDemoLink(projectData.projectData[2].demoLink);
+        setProjectDesc(projectData.projectData[2].projectDescription);
+        setTechUsed(projectData.projectData[2].technologiesUsed);
+        setGitHubLink(projectData.projectData[2].gitHubLink);
+    }
+
     return (
         <div id='project-page' className='start-project-page'>
             <div className='gold-box-div'>
@@ -39,6 +47,7 @@ const ProjectPage = () => {
                     <div className="list">
                         <button className={projectTitle === 'SpudBud' ? 'selected-project-css' : 'project-name'} onClick={spudBudHandler}>SpudBud</button>
                         <button className={projectTitle === 'Campanion' ? 'selected-project-css' : 'project-name'} onClick={campanionHandler}>Campanion</button>
+                        <button className={projectTitle === 'Jessica News' ? 'selected-project-css' : 'project-name'} onClick={jessicaNewsHandler}>Jessica News</button>
                     </div>
                 </div>
                 <div className="project-name-div">
