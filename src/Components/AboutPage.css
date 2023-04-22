@@ -75,6 +75,19 @@
         margin-top: .50rem;
     }
 
+    .skills-div {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .tech-icon {
+        height: 4rem;
+        padding: 1rem;
+    }
+
 }
 
 
@@ -157,5 +170,18 @@
     .type-of-degree {
         font-size: 1.1rem;
         margin-top: .50rem;
+    }
+
+    .skills-div {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .tech-icon {
+        height: 4rem;
+        padding: 1rem;
     }
 }
