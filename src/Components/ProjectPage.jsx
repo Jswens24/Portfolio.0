@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProjectPage.css';
 import projectData from '../Data/ProjectData';
 
 const ProjectPage = () => {
-    const [projectTitle, setProjectTitle] = useState('');
-    const [demoLink, setDemoLink] = useState('');
-    const [projectDesc, setProjectDesc] = useState('');
-    const [techUsed, setTechUsed] = useState('');
-    const [gitHubLink, setGitHubLink] = useState('');
-    const [isSelected, setIsSelected] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    const [projectTitle, setProjectTitle] = useState(projectData.projectData[0].projectTitle);
+    const [demoLink, setDemoLink] = useState(projectData.projectData[0].demoLink);
+    const [projectDesc, setProjectDesc] = useState(projectData.projectData[0].projectDescription);
+    const [techUsed, setTechUsed] = useState(projectData.projectData[0].technologiesUsed);
+    const [gitHubLink, setGitHubLink] = useState(projectData.projectData[0].gitHubLink);
 
     const spudBudHandler = () => {
         setProjectTitle(projectData.projectData[0].projectTitle);
@@ -16,7 +20,6 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[0].projectDescription);
         setTechUsed(projectData.projectData[0].technologiesUsed);
         setGitHubLink(projectData.projectData[0].gitHubLink);
-        setIsSelected(true);
         // console.log(projectData);
     }
 
@@ -26,25 +29,33 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[1].projectDescription);
         setTechUsed(projectData.projectData[1].technologiesUsed);
         setGitHubLink(projectData.projectData[1].gitHubLink);
-        setIsSelected(true);
+    }
+
+    const jessicaNewsHandler = () => {
+        setProjectTitle(projectData.projectData[2].projectTitle);
+        setDemoLink(projectData.projectData[2].demoLink);
+        setProjectDesc(projectData.projectData[2].projectDescription);
+        setTechUsed(projectData.projectData[2].technologiesUsed);
+        setGitHubLink(projectData.projectData[2].gitHubLink);
     }
 
     return (
         <div id='project-page' className='start-project-page'>
             <div className='gold-box-div'>
-                <h2 className='projects-title'>PROJECTS</h2>
-                <div className="project-list">
-                    <button className={projectTitle === 'SpudBud' ? 'selected-project-css' : 'project-name'} onClick={spudBudHandler}>SpudBud</button>
-                    <button className={projectTitle === 'Campanion' ? 'selected-project-css' : 'project-name'} onClick={campanionHandler}>Campanion</button>
+                <div className="project-list-container">
+                    <h2 className='projects-title'>PROJECTS</h2>
+                    <div className="list">
+                        <button className={projectTitle === 'SpudBud' ? 'selected-project-css' : 'project-name'} onClick={spudBudHandler}>SpudBud</button>
+                        <button className={projectTitle === 'Campanion' ? 'selected-project-css' : 'project-name'} onClick={campanionHandler}>Campanion</button>
+                        <button className={projectTitle === 'Jessica News' ? 'selected-project-css' : 'project-name'} onClick={jessicaNewsHandler}>Jessica News</button>
+                    </div>
                 </div>
-                <div>
-                    {!isSelected &&
-                        <h2 className='projects-title'>Please select a project from above</h2>
-                    }
+                <div className="project-name-div">
+                    <h3>{projectTitle}</h3>
                 </div>
                 <div className="video-contain">
-                    <iframe width="100%"
-                        height="100%"
+                    <iframe
+                        className='responsive-iframe'
                         src={demoLink}
                         title="YouTube video player"
                         frameborder="0"
@@ -56,13 +67,10 @@ const ProjectPage = () => {
                     <p className='tech'>{techUsed}</p>
                 </div>
                 <form>
-                    <button className={!isSelected ? 'not-selected-btn' : 'github-btn'} formAction={gitHubLink}>GITHUB</button>
+                    <button className='github-btn' formAction={gitHubLink}>
+                        <i class="devicon-github-original colored"></i>
+                    </button>
                 </form>
-            </div>
-            <div className="about-arrow-div">
-                <a href="#contact-page"><div className='arrow down'></div></a>
-                <a href="#contact-page"><div className='arrow down'></div></a>
-                <a href="#contact-page"><div className='arrow down'></div></a>
             </div>
         </div >
     )

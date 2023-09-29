@@ -1,103 +1,255 @@
-.start-project-page {
-    margin-top: 40%;
+@media screen and (min-width: 1050px) {
+
+    .start-project-page {
+        padding-top: 10rem;
+        background-color: #F87268;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        padding-bottom: 10rem;
+    }
+
+    .project-list-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        width: 100%;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 4rem;
+        margin-top: 2rem;
+    }
+
+    .gold-box-div {
+        /* background-color: rgb(255, 215, 0, .35); */
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-name-div h3 {
+        font-family: 'Space Mono', monospace;
+        font-size: 3rem;
+        font-weight: 200;
+        padding-top: 2rem;
+    }
+
+    button {
+        color: black;
+    }
+
+
+    .selected-project-css {
+        /* color: gold; */
+        text-decoration: underline;
+        font-size: 2rem;
+        font-weight: 400;
+        background: none;
+        border: none;
+        font-family: 'Space Mono', monospace;
+        padding-bottom: 5%;
+        color: black;
+        cursor: pointer;
+    }
+
+    .project-name {
+        font-size: 2rem;
+        font-weight: 400;
+        background: none;
+        border: none;
+        font-family: 'Space Mono', monospace;
+        color: black;
+        padding-bottom: 5%;
+        cursor: pointer;
+    }
+
+    .project-name:hover {
+        text-decoration: underline;
+    }
+
+    .projects-title {
+        font-family: 'Space Mono', monospace;
+        color: black;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .desc-and-tech {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        padding: 5%;
+    }
+
+    .tech {
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+
+    .github-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 7rem;
+    }
+
+    .github-btn:hover {
+        cursor: pointer;
+    }
+
+    .video-contain {
+        position: relative;
+        overflow: hidden;
+        width: 75%;
+        padding-top: 56.25%;
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .not-selected-btn {
+        display: none;
+    }
+
 }
 
-.project-list {
-    display: flex;
-    flex-direction: column;
-}
 
-.gold-box-div {
-    background-color: rgb(255, 215, 0, .35);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* PHONE SIZE VVVVVVVV */
 
-.selected-project-css {
-    color: gold;
-    text-decoration: underline;
-    font-weight: bold;
-    background: none;
-    border: none;
-    font-family: 'Space Mono', monospace;
-    padding-bottom: 5%;
-    font-size: large;
-}
+@media screen and (max-width: 1050px) {
+    .start-project-page {
+        padding-top: 15rem;
+        background-color: #F87268;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        padding-bottom: 10rem;
+    }
 
-.project-name {
-    font-weight: bold;
-    background: none;
-    border: none;
-    font-family: 'Space Mono', monospace;
-    color: white;
-    padding-bottom: 5%;
-    font-size: large;
-}
+    .project-list-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        width: 100%;
+    }
 
-.projects-title {
-    font-family: 'Space Mono', monospace;
-}
-
-.desc-and-tech {
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    padding: 5%;
-}
-
-.tech {
-    font-weight: bold;
-}
-
-.github-btn {
-    align-items: center;
-    background-color: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.85);
-    cursor: pointer;
-    display: inline-flex;
-    font-family: 'Space Mono', monospace;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: auto;
-}
+    button {
+        color: black;
+    }
 
 
-.github-btn:hover,
-.github-btn:focus {
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
-}
+    .list {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 4rem;
+        margin-top: 2rem;
+    }
 
-.github-btn:hover {
-    transform: translateY(-1px);
-}
+    .gold-box-div {
+        /* background-color: rgb(255, 215, 0, .35); */
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.github-btn:active {
-    background-color: #F0F0F1;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(0);
-}
+    .project-name-div h3 {
+        font-family: 'Space Mono', monospace;
+        font-size: 3rem;
+        font-weight: 200;
+        padding-top: 2rem;
+    }
 
-.not-selected-btn {
-    display: none;
+
+
+    .selected-project-css {
+        /* color: gold; */
+        text-decoration: underline;
+        font-size: 2rem;
+        font-weight: 400;
+        background: none;
+        border: none;
+        font-family: 'Space Mono', monospace;
+        padding-bottom: 5%;
+        color: black;
+    }
+
+    .project-name {
+        font-size: 2rem;
+        font-weight: 400;
+        background: none;
+        border: none;
+        font-family: 'Space Mono', monospace;
+        color: black;
+        padding-bottom: 5%;
+    }
+
+    .projects-title {
+        font-family: 'Space Mono', monospace;
+        color: black;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .desc-and-tech {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'Space Mono', monospace;
+        padding: 5%;
+    }
+
+    .tech {
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+
+    .github-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 7rem;
+    }
+
+    .github-btn:hover {
+        cursor: pointer;
+    }
+
+    .video-contain {
+        position: relative;
+        overflow: hidden;
+        width: 75%;
+        padding-top: 56.25%;
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .not-selected-btn {
+        display: none;
+    }
 }
