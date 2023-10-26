@@ -125,6 +125,24 @@
         display: none;
     }
 
+    .form-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .hostedLink {
+        background: none;
+        border: 2px solid black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        font-weight: 600;
+        height: 45%;
+        margin-top: 3%;
+        padding: 5%;
+    }
+
 }
 
 
@@ -251,5 +269,23 @@
 
     .not-selected-btn {
         display: none;
+    }
+
+    .form-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .hostedLink {
+        background: none;
+        border: 2px solid black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        font-weight: 600;
+        height: 45%;
+        margin-top: 3%;
+        padding: 5%;
     }
 }

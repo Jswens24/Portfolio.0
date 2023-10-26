@@ -13,6 +13,8 @@ const ProjectPage = () => {
     const [projectDesc, setProjectDesc] = useState(projectData.projectData[0].projectDescription);
     const [techUsed, setTechUsed] = useState(projectData.projectData[0].technologiesUsed);
     const [gitHubLink, setGitHubLink] = useState(projectData.projectData[0].gitHubLink);
+    const [hostedLink, setHostedLink] = useState(projectData.projectData[0].hostedLink);
+    const [isHosted, setIsHosted] = useState(projectData.projectData[0].isHosted);
 
     const spudBudHandler = () => {
         setProjectTitle(projectData.projectData[0].projectTitle);
@@ -20,6 +22,7 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[0].projectDescription);
         setTechUsed(projectData.projectData[0].technologiesUsed);
         setGitHubLink(projectData.projectData[0].gitHubLink);
+        setIsHosted(projectData.projectData[0].hosted)
         // console.log(projectData);
     }
 
@@ -29,6 +32,7 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[1].projectDescription);
         setTechUsed(projectData.projectData[1].technologiesUsed);
         setGitHubLink(projectData.projectData[1].gitHubLink);
+        setIsHosted(projectData.projectData[1].hosted)
     }
 
     const jessicaNewsHandler = () => {
@@ -37,6 +41,17 @@ const ProjectPage = () => {
         setProjectDesc(projectData.projectData[2].projectDescription);
         setTechUsed(projectData.projectData[2].technologiesUsed);
         setGitHubLink(projectData.projectData[2].gitHubLink);
+        setIsHosted(projectData.projectData[2].hosted)
+    }
+
+    const wildHareHandler = () => {
+        setProjectTitle(projectData.projectData[3].projectTitle);
+        setDemoLink(projectData.projectData[3].demoLink);
+        setProjectDesc(projectData.projectData[3].projectDescription);
+        setTechUsed(projectData.projectData[3].technologiesUsed);
+        setGitHubLink(projectData.projectData[3].gitHubLink);
+        setIsHosted(projectData.projectData[3].hosted);
+        setHostedLink(projectData.projectData[3].hostedLink);
     }
 
     return (
@@ -48,6 +63,7 @@ const ProjectPage = () => {
                         <button className={projectTitle === 'SpudBud' ? 'selected-project-css' : 'project-name'} onClick={spudBudHandler}>SpudBud</button>
                         <button className={projectTitle === 'Campanion' ? 'selected-project-css' : 'project-name'} onClick={campanionHandler}>Campanion</button>
                         <button className={projectTitle === 'Jessica News' ? 'selected-project-css' : 'project-name'} onClick={jessicaNewsHandler}>Jessica News</button>
+                        <button className={projectTitle === 'WildHare' ? 'selected-project-css' : 'project-name'} onClick={wildHareHandler}>WildHare</button>
                     </div>
                 </div>
                 <div className="project-name-div">
@@ -66,10 +82,11 @@ const ProjectPage = () => {
                     <p>{projectDesc}</p>
                     <p className='tech'>{techUsed}</p>
                 </div>
-                <form>
+                <form className='form-flex'>
                     <button className='github-btn' formAction={gitHubLink}>
                         <i class="devicon-github-original colored"></i>
                     </button>
+                    {isHosted ? <button className='hostedLink' formAction={hostedLink}>Hosted Here</button> : ''}
                 </form>
             </div>
         </div >

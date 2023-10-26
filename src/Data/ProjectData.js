@@ -25,6 +25,16 @@ const projectData = [
         hosted: false,
         projectDescription: 'Jessica News is a styling project that I built using tailwindcss.  The design is based on a popular news source and uses React for the front end.',
         technologiesUsed: 'JavaScript | HTML | CSS | React | Axios | tailwindcss | newsapi.org'
+    },
+    {
+        projectId: 4,
+        projectTitle: 'Wildhare',
+        demoLink: 'https://www.youtube.com/embed/xK7HZ96hXtk',
+        gitHubLink: 'https://github.com/Jswens24/wildhare',
+        hosted: true,
+        projectDescription: 'Wildhare is an e-commerce website that seamlessly integrates with an existing eBay store. Leveraging the power of React, I crafted a modern and responsive online shopping platform that ensures an optimal user experience across all devices. This project showcases my expertise in web development and my ability to extend and enhance existing e-commerce solutions, making it easier for businesses to expand their online presence and serve customers effectively.',
+        technologiesUsed: 'JavaScript | HTML | CSS | React',
+        hostedLink: 'https://main--ornate-bienenstitch-3cef9b.netlify.app'
     }
 ]
 
