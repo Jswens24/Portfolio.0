@@ -35,6 +35,16 @@ const projectData = [
         projectDescription: 'Wildhare is an e-commerce website that seamlessly integrates with an existing eBay store. Leveraging the power of React, I crafted a modern and responsive online shopping platform that ensures an optimal user experience across all devices. This project showcases my expertise in web development and my ability to extend and enhance existing e-commerce solutions, making it easier for businesses to expand their online presence and serve customers effectively.',
         technologiesUsed: 'JavaScript | HTML | CSS | React',
         hostedLink: 'https://main--ornate-bienenstitch-3cef9b.netlify.app'
+    },
+    {
+        projectId: 5,
+        projectTitle: 'Flash Cards',
+        demoLink: 'https://youtube.com/embed/EGWAPPJzCB4?si=tP1ERUilBWW_uJsh',
+        gitHubLink: 'https://github.com/Jswens24/flash-cards',
+        hosted: true,
+        projectDescription: 'Showcasing my React skills with a simple yet effective Flash Card App. Users can effortlessly study a variety of topics with an easy-to-use list. ',
+        technologiesUsed: 'JavaScript | HTML | CSS | React | Tailwindcss',
+        hostedLink: 'https://main--rainbow-gnome-bd662b.netlify.app/'
     }
 ]
 
