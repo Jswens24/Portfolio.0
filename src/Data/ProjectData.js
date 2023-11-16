@@ -45,6 +45,18 @@ const projectData = [
         projectDescription: 'Showcasing my React skills with a simple yet effective Flash Card App. Users can effortlessly study a variety of topics with an easy-to-use list. ',
         technologiesUsed: 'JavaScript | HTML | CSS | React | Tailwindcss',
         hostedLink: 'https://main--rainbow-gnome-bd662b.netlify.app/'
+    },
+    {
+        projectId: 6,
+        projectTitle: 'Swenco',
+        demoLink: 'https://www.youtube.com/embed/Ticsdh-mgpM?si=UgkLHfTzxH_iBofp',
+        gitHubLink: 'https://github.com/Jswens24/Swenco',
+        hosted: true,
+        projectDescription: 'A testament to my proficiency in HTML, JavaScript, React, and Tailwind CSS. This sleek and responsive site seamlessly integrates interactive elements, demonstrating a perfect blend of technology and design for a leading construction company. Explore the future of online presence in construction with this dynamic showcase.',
+        technologiesUsed: 'JavaScript | HTML | CSS | React | Tailwindcss',
+        hostedLink: 'https://swenco.construction/'
+
+
     }
 ]
 

@@ -143,6 +143,12 @@
         padding: 5%;
     }
 
+    .hostedLink:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 
@@ -287,5 +293,11 @@
         height: 45%;
         margin-top: 3%;
         padding: 5%;
+    }
+
+    .hostedLink:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
     }
 }

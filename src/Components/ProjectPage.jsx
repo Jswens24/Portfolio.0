@@ -62,6 +62,15 @@ const ProjectPage = () => {
         setIsHosted(projectData.projectData[4].hosted);
         setHostedLink(projectData.projectData[4].hostedLink);
     }
+    const swencoHandler = () => {
+        setProjectTitle(projectData.projectData[5].projectTitle);
+        setDemoLink(projectData.projectData[5].demoLink);
+        setProjectDesc(projectData.projectData[5].projectDescription);
+        setTechUsed(projectData.projectData[5].technologiesUsed);
+        setGitHubLink(projectData.projectData[5].gitHubLink);
+        setIsHosted(projectData.projectData[5].hosted);
+        setHostedLink(projectData.projectData[5].hostedLink);
+    }
 
     return (
         <div id='project-page' className='start-project-page'>
@@ -74,6 +83,7 @@ const ProjectPage = () => {
                         <button className={projectTitle === 'Jessica News' ? 'selected-project-css' : 'project-name'} onClick={jessicaNewsHandler}>Jessica News</button>
                         <button className={projectTitle === 'WildHare' ? 'selected-project-css' : 'project-name'} onClick={wildHareHandler}>WildHare</button>
                         <button className={projectTitle === 'Flash Cards' ? 'selected-project-css' : 'project-name'} onClick={flashCardHandler}>Flash Cards</button>
+                        <button className={projectTitle === 'Swenco' ? 'selected-project-css' : 'project-name'} onClick={swencoHandler}>Swenco</button>
                     </div>
                 </div>
                 <div className="project-name-div">
